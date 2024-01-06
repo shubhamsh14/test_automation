@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Set the height of the body to 100% of the viewport height */
+            margin: 0; /* Remove default margin to ensure the form is centered */
+        }
+
+        #generateForm {
+            max-width: 300px;
+            width: 100%;
+            padding: 20px; /* Add padding for spacing inside the form */
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Add a border for better visibility */
+            border-radius: 8px; /* Optional: Add rounded corners */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Your Form</title>
+</head>
+<body>
+
+<form id="generateForm" action="/create_resellers" method="post">
+    <!-- Your form fields -->
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+    <label for="contact">Contact:</label>
+    <input type="text" name="contact" id="contact" placeholder="Enter your contact number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+    <label for="company">Company Name:</label>
+    <input type="text" name="company" id="company" placeholder="Enter your company name" required>
+
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" placeholder="Enter your username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+    <!-- Add other form fields as needed -->
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
